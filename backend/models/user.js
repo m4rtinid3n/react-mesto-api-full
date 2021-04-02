@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs');
 const isEmail = require('validator/lib/isEmail');
 const isURL = require('validator/lib/isURL');
 const UnauthorizedErr = require('../errors/unauthorized-err');
+
 const userSchema = new mongoose.Schema({
   email: {
     type: String,

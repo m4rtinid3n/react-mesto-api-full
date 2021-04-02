@@ -1,5 +1,5 @@
 export const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://mesto.students.nomoredomains.icu'
+  ? 'https://api.mesto.students.nomoredomains.icu'
   : 'http://localhost:3000';
 
 const handleResponse = (res) => {

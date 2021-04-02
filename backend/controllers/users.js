@@ -5,6 +5,7 @@ const UnauthorizedErr = require('../errors/unauthorized-err');
 const NotFoundError = require('../errors/not-found-err');
 const ConflictError = require('../errors/conflict-err');
 const { generateToken } = require('../utils/genereteToken');
+
 const saltRounds = 10;
 
 const getUsers = async (req, res, next) => {

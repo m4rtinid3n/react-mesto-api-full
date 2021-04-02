@@ -6,6 +6,7 @@ const { errors } = require('celebrate');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 require('dotenv').config();
 const routers = require('./routes/index.js');
+
 const app = express();
 const { PORT = 3000 } = process.env;
 app.use(bodyParser.json());
